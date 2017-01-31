@@ -10,7 +10,7 @@ app.get('/', (req, res) => res.send(`
     
     </head>
   <body>
-    <h1>Hello</h1>
+    <h1>Hello mon ami</h1>
     <img src="/public/logo_cncf_0002.png" />
   </body>
   </html>
