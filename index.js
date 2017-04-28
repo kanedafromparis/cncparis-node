@@ -11,7 +11,7 @@ app.get('/', (req, res) => res.send(`
     </head>
   <body>
     <h1>What's up pussy cat...</h1>
-    <img src="/public/logo_cncf_0002.png" />
+    <img src="/public/logo_cncf_0003.png" />
   </body>
   </html>
 
