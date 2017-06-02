@@ -22,4 +22,4 @@ app.get('/', (req, res) => res.send(`
 
 app.use('/public', express.static(path.join(__dirname, 'public')))
 
-app.listen(server_port, server_ip_address);
+app.listen(server_port);
