@@ -7,7 +7,7 @@ var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080
 app.get('/', (req, res) => res.send(`
   <html>
           <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
-        <title>I love Openshift/kubernetes</title>
+        <title>I love Openshift/kubernetes for with love</title>
         <meta http-equiv="refresh" content="5" >
     <head>
     
