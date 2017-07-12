@@ -14,8 +14,8 @@ app.get('/', (req, res) => res.send(`
     </head>
   <body>
     <h1>Hello</h1>
-    <!-- yet another so silly modification -->
-    <img src="/public/logo_cncf_0003.png" />
+    <!-- this is still a silly modification -->
+    <img src="/public/logo_cncf_0001.png" />
   </body>
   </html>
 `));
