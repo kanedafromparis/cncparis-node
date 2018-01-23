@@ -8,7 +8,8 @@ var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
 
 
 app.get('/', (req, res) => {
-    log.info('ping');
+    log.info('ping :'+JSON.stringify(req.headers));
+    res.cookie('rememberme', '1', { expires: new Date(Date.now() + 900000)});
     res.send(`
   <html>
           <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
@@ -18,8 +19,7 @@ app.get('/', (req, res) => {
     
     </head>
   <body>
-    <h1>Hello</h1>
-    <!-- img src="/public/logo_cncf_0001.png" / -->
+    <h1>Hello</h1>`+JSON.stringify(req.headers)+`
   </body>
   </html>
 `)});
