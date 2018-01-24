@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const os = require('os');
 const app = express();
 var Log = require('log')
   , log = new Log('info');
@@ -9,8 +10,9 @@ var server_setcookie = process.env.OPENSHIFT_COOKIE_NAME;
 
 log.info('process.env.OPENSHIFT_COOKIE_NAME :'+process.env.OPENSHIFT_COOKIE_NAME);
 
+
 app.get('/', (req, res) => {
-    log.info('ping :'+JSON.stringify(req.headers));
+    log.info('ping : '+os.hostname()+" : " +JSON.stringify(req.headers));
     
     if(typeof server_setcookie !== 'undefined' && server_setcookie){
       res.cookie('server_setcookie', '1', { expires: new Date(Date.now() + 900000)});
