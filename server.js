@@ -13,7 +13,7 @@ app.get('/', (req, res) => res.send(`
     
     </head>
   <body>
-    <h1>Hello service A1</h1>
+    <h1>Hello service A 2 for webhoock</h1>
     <!-- this is still a silly modification -->
     <img src="/public/logo_cncf_0001.png" />
   </body>
