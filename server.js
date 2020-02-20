@@ -15,7 +15,7 @@ app.get('/', (req, res) => res.send(`
   <body>
     <h1>Hello service just dev</h1>
     <!-- this is still a silly modification -->
-    <img src="/public/logo_cncf_0001.png" />
+    <img src="/public/logo_cncf_0002.png" />
   </body>
   </html>
 `));
